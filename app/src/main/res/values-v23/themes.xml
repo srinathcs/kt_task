@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <style name="Theme.TKTask" parent="Base.Theme.TKTask">
+    <!-- Transparent system bars for edge-to-edge. -->
+    <item name="android:navigationBarColor">@color/theme</item>
+    <item name="android:statusBarColor">@color/theme</item>
+    <item name="android:windowLightStatusBar">@color/theme</item>
+  </style>
+</resources>

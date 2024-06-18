@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_kt"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_kt"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TKTask"
+        tools:targetApi="31">
+        <activity
+            android:name=".location.LocationHistoryActivity"
+            android:exported="false"
+            android:label="@string/title_activity_map"
+            android:theme="@style/Theme.TKTask" />
+
+        <activity
+            android:name=".location.ItemLocationTrackActivity"
+            android:exported="false"
+            android:label="ItemLocationTrack"
+            android:theme="@style/Theme.TKTask" />
+        <activity
+            android:name=".dashboard.DashboardActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/Theme.TKTask" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.TKTask" />
+        <activity
+            android:name=".signup.ui.SignUpActivity"
+            android:exported="false"
+            android:label="@string/title_activity_signup"
+            android:theme="@style/Theme.TKTask" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TKTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAwrCVyH0gISIYjU7oTg3kfXZxhMUN2DaU" />
+    </application>
+
+</manifest>
